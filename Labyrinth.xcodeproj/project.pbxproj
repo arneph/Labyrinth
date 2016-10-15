@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A09EE2016DFBA9D00964A7F /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A09EE1F16DFBA9D00964A7F /* Settings.m */; };
+		7A09EE2316DFD1D900964A7F /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A09EE2216DFD1D900964A7F /* SettingsController.m */; };
+		7A09EE2516DFD1F500964A7F /* SettingsSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A09EE2416DFD1F500964A7F /* SettingsSheet.xib */; };
+		7A3E9FDD16B5578E001B717A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A3E9FDC16B5578E001B717A /* Cocoa.framework */; };
+		7A3E9FE716B5578E001B717A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7A3E9FE516B5578E001B717A /* InfoPlist.strings */; };
+		7A3E9FE916B5578E001B717A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3E9FE816B5578E001B717A /* main.m */; };
+		7A3E9FED16B5578E001B717A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7A3E9FEB16B5578E001B717A /* Credits.rtf */; };
+		7A3E9FF016B5578E001B717A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3E9FEF16B5578E001B717A /* AppDelegate.m */; };
+		7A3E9FF316B5578E001B717A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A3E9FF116B5578E001B717A /* MainMenu.xib */; };
+		7A664F5616C65DDD002CAA8F /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A664F5416C65DDD002CAA8F /* GameViewController.m */; };
+		7A664F5716C65DDD002CAA8F /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A664F5516C65DDD002CAA8F /* GameViewController.xib */; };
+		7A6F1E9C16C657CC004FF1D4 /* WaitingScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A6F1E9A16C657CC004FF1D4 /* WaitingScreen.xib */; };
+		7A90897116E1405D00B1C790 /* GameSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A90897016E1405D00B1C790 /* GameSettings.m */; };
+		7ABEEA1B16C9125F0096282F /* DemoMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABEEA1A16C9125F0096282F /* DemoMapView.m */; };
+		7AC1AB9516B55A020043A7BF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC1AB9416B55A020043A7BF /* ViewController.m */; };
+		7AC1ABA016B55B650043A7BF /* Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC1AB9D16B55B650043A7BF /* Map.m */; };
+		7AC1ABA116B55B650043A7BF /* MapGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC1AB9F16B55B650043A7BF /* MapGenerator.m */; };
+		7AC1ABA416B55D820043A7BF /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC1ABA316B55D820043A7BF /* MapView.m */; };
+		7AC1ABAB16B55DF30043A7BF /* IntroController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC1ABA916B55DF30043A7BF /* IntroController.m */; };
+		7AC1ABAC16B55DF30043A7BF /* IntroController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AC1ABAA16B55DF30043A7BF /* IntroController.xib */; };
+		7AC1ABB416B5670C0043A7BF /* MainMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC1ABB216B5670C0043A7BF /* MainMenuController.m */; };
+		7AC1ABB516B5670C0043A7BF /* MainMenuController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AC1ABB316B5670C0043A7BF /* MainMenuController.xib */; };
+		7AC1ABBA16B56A560043A7BF /* NewGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC1ABB816B56A560043A7BF /* NewGameController.m */; };
+		7AC1ABBB16B56A560043A7BF /* NewGameController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AC1ABB916B56A560043A7BF /* NewGameController.xib */; };
+		7AC1ABC016B56DA60043A7BF /* ContinueGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC1ABBE16B56DA60043A7BF /* ContinueGameController.m */; };
+		7AC1ABC116B56DA60043A7BF /* ContinueGameController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AC1ABBF16B56DA60043A7BF /* ContinueGameController.xib */; };
+		7AC1ABC416B571630043A7BF /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC1ABC316B571620043A7BF /* WindowController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7A09EE1E16DFBA9D00964A7F /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		7A09EE1F16DFBA9D00964A7F /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
+		7A09EE2116DFD1D900964A7F /* SettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController.h; sourceTree = "<group>"; };
+		7A09EE2216DFD1D900964A7F /* SettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController.m; sourceTree = "<group>"; };
+		7A09EE2416DFD1F500964A7F /* SettingsSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsSheet.xib; sourceTree = "<group>"; };
+		7A3E9FD816B5578E001B717A /* Labyrinth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Labyrinth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A3E9FDC16B5578E001B717A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		7A3E9FDF16B5578E001B717A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		7A3E9FE016B5578E001B717A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7A3E9FE116B5578E001B717A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7A3E9FE416B5578E001B717A /* Labyrinth-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Labyrinth-Info.plist"; sourceTree = "<group>"; };
+		7A3E9FE616B5578E001B717A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7A3E9FE816B5578E001B717A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7A3E9FEA16B5578E001B717A /* Labyrinth-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Labyrinth-Prefix.pch"; sourceTree = "<group>"; };
+		7A3E9FEC16B5578E001B717A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		7A3E9FEE16B5578E001B717A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7A3E9FEF16B5578E001B717A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7A3E9FF216B5578E001B717A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		7A664F5316C65DDD002CAA8F /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		7A664F5416C65DDD002CAA8F /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		7A664F5516C65DDD002CAA8F /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
+		7A6F1E9A16C657CC004FF1D4 /* WaitingScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaitingScreen.xib; sourceTree = "<group>"; };
+		7A90896F16E1405D00B1C790 /* GameSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSettings.h; sourceTree = "<group>"; };
+		7A90897016E1405D00B1C790 /* GameSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameSettings.m; sourceTree = "<group>"; };
+		7ABEEA1916C9125F0096282F /* DemoMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoMapView.h; sourceTree = "<group>"; };
+		7ABEEA1A16C9125F0096282F /* DemoMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoMapView.m; sourceTree = "<group>"; };
+		7AC1AB9316B55A020043A7BF /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7AC1AB9416B55A020043A7BF /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7AC1AB9C16B55B650043A7BF /* Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Map.h; sourceTree = "<group>"; };
+		7AC1AB9D16B55B650043A7BF /* Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Map.m; sourceTree = "<group>"; };
+		7AC1AB9E16B55B650043A7BF /* MapGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapGenerator.h; sourceTree = "<group>"; };
+		7AC1AB9F16B55B650043A7BF /* MapGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapGenerator.m; sourceTree = "<group>"; };
+		7AC1ABA216B55D820043A7BF /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
+		7AC1ABA316B55D820043A7BF /* MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapView.m; sourceTree = "<group>"; };
+		7AC1ABA816B55DF30043A7BF /* IntroController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroController.h; sourceTree = "<group>"; };
+		7AC1ABA916B55DF30043A7BF /* IntroController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroController.m; sourceTree = "<group>"; };
+		7AC1ABAA16B55DF30043A7BF /* IntroController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntroController.xib; sourceTree = "<group>"; };
+		7AC1ABB116B5670C0043A7BF /* MainMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuController.h; sourceTree = "<group>"; };
+		7AC1ABB216B5670C0043A7BF /* MainMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuController.m; sourceTree = "<group>"; };
+		7AC1ABB316B5670C0043A7BF /* MainMenuController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenuController.xib; sourceTree = "<group>"; };
+		7AC1ABB716B56A560043A7BF /* NewGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewGameController.h; sourceTree = "<group>"; };
+		7AC1ABB816B56A560043A7BF /* NewGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewGameController.m; sourceTree = "<group>"; };
+		7AC1ABB916B56A560043A7BF /* NewGameController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewGameController.xib; sourceTree = "<group>"; };
+		7AC1ABBD16B56DA60043A7BF /* ContinueGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContinueGameController.h; sourceTree = "<group>"; };
+		7AC1ABBE16B56DA60043A7BF /* ContinueGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContinueGameController.m; sourceTree = "<group>"; };
+		7AC1ABBF16B56DA60043A7BF /* ContinueGameController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContinueGameController.xib; sourceTree = "<group>"; };
+		7AC1ABC216B571620043A7BF /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
+		7AC1ABC316B571620043A7BF /* WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
+		7AD6015616C683C20092EE39 /* MapViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewDelegate.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A3E9FD516B5578E001B717A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A3E9FDD16B5578E001B717A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7A3E9FCD16B5578E001B717A = {
+			isa = PBXGroup;
+			children = (
+				7A3E9FE216B5578E001B717A /* Labyrinth */,
+				7A3E9FDB16B5578E001B717A /* Frameworks */,
+				7A3E9FD916B5578E001B717A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7A3E9FD916B5578E001B717A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A3E9FD816B5578E001B717A /* Labyrinth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A3E9FDB16B5578E001B717A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A3E9FDC16B5578E001B717A /* Cocoa.framework */,
+				7A3E9FDE16B5578E001B717A /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A3E9FDE16B5578E001B717A /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A3E9FDF16B5578E001B717A /* AppKit.framework */,
+				7A3E9FE016B5578E001B717A /* CoreData.framework */,
+				7A3E9FE116B5578E001B717A /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		7A3E9FE216B5578E001B717A /* Labyrinth */ = {
+			isa = PBXGroup;
+			children = (
+				7A3E9FEE16B5578E001B717A /* AppDelegate.h */,
+				7A3E9FEF16B5578E001B717A /* AppDelegate.m */,
+				7AC1ABA716B55DA90043A7BF /* General */,
+				7AC1AB9716B55B220043A7BF /* Intro */,
+				7AC1ABAD16B566D30043A7BF /* Main Menu */,
+				7AC1ABB616B56A3D0043A7BF /* New Game */,
+				7AC1ABBC16B56D810043A7BF /* Continue Game */,
+				7A664F5216C65DBB002CAA8F /* Game */,
+				7AAC9F2A16C8084800F6D5C2 /* General Settings */,
+				7A6F1E9A16C657CC004FF1D4 /* WaitingScreen.xib */,
+				7AC1AB9316B55A020043A7BF /* ViewController.h */,
+				7AC1AB9416B55A020043A7BF /* ViewController.m */,
+				7A3E9FF116B5578E001B717A /* MainMenu.xib */,
+				7AC1ABC216B571620043A7BF /* WindowController.h */,
+				7AC1ABC316B571620043A7BF /* WindowController.m */,
+				7A3E9FE316B5578E001B717A /* Supporting Files */,
+			);
+			path = Labyrinth;
+			sourceTree = "<group>";
+		};
+		7A3E9FE316B5578E001B717A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A3E9FE416B5578E001B717A /* Labyrinth-Info.plist */,
+				7A3E9FE516B5578E001B717A /* InfoPlist.strings */,
+				7A3E9FE816B5578E001B717A /* main.m */,
+				7A3E9FEA16B5578E001B717A /* Labyrinth-Prefix.pch */,
+				7A3E9FEB16B5578E001B717A /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7A664F5216C65DBB002CAA8F /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				7A664F5316C65DDD002CAA8F /* GameViewController.h */,
+				7A664F5416C65DDD002CAA8F /* GameViewController.m */,
+				7A664F5516C65DDD002CAA8F /* GameViewController.xib */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
+		7AAC9F2A16C8084800F6D5C2 /* General Settings */ = {
+			isa = PBXGroup;
+			children = (
+				7A09EE1E16DFBA9D00964A7F /* Settings.h */,
+				7A09EE1F16DFBA9D00964A7F /* Settings.m */,
+				7A09EE2116DFD1D900964A7F /* SettingsController.h */,
+				7A09EE2216DFD1D900964A7F /* SettingsController.m */,
+				7A09EE2416DFD1F500964A7F /* SettingsSheet.xib */,
+			);
+			name = "General Settings";
+			sourceTree = "<group>";
+		};
+		7AC1AB9716B55B220043A7BF /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				7AC1ABA816B55DF30043A7BF /* IntroController.h */,
+				7AC1ABA916B55DF30043A7BF /* IntroController.m */,
+				7AC1ABAA16B55DF30043A7BF /* IntroController.xib */,
+			);
+			name = Intro;
+			sourceTree = "<group>";
+		};
+		7AC1AB9816B55B440043A7BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7AC1AB9C16B55B650043A7BF /* Map.h */,
+				7AC1AB9D16B55B650043A7BF /* Map.m */,
+				7AC1AB9E16B55B650043A7BF /* MapGenerator.h */,
+				7AC1AB9F16B55B650043A7BF /* MapGenerator.m */,
+				7A90896F16E1405D00B1C790 /* GameSettings.h */,
+				7A90897016E1405D00B1C790 /* GameSettings.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7AC1ABA516B55D8F0043A7BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7AC1ABA216B55D820043A7BF /* MapView.h */,
+				7AC1ABA316B55D820043A7BF /* MapView.m */,
+				7AD6015616C683C20092EE39 /* MapViewDelegate.h */,
+				7ABEEA1916C9125F0096282F /* DemoMapView.h */,
+				7ABEEA1A16C9125F0096282F /* DemoMapView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7AC1ABA716B55DA90043A7BF /* General */ = {
+			isa = PBXGroup;
+			children = (
+				7AC1AB9816B55B440043A7BF /* Model */,
+				7AC1ABA516B55D8F0043A7BF /* View */,
+			);
+			name = General;
+			sourceTree = "<group>";
+		};
+		7AC1ABAD16B566D30043A7BF /* Main Menu */ = {
+			isa = PBXGroup;
+			children = (
+				7AC1ABB116B5670C0043A7BF /* MainMenuController.h */,
+				7AC1ABB216B5670C0043A7BF /* MainMenuController.m */,
+				7AC1ABB316B5670C0043A7BF /* MainMenuController.xib */,
+			);
+			name = "Main Menu";
+			sourceTree = "<group>";
+		};
+		7AC1ABB616B56A3D0043A7BF /* New Game */ = {
+			isa = PBXGroup;
+			children = (
+				7AC1ABB716B56A560043A7BF /* NewGameController.h */,
+				7AC1ABB816B56A560043A7BF /* NewGameController.m */,
+				7AC1ABB916B56A560043A7BF /* NewGameController.xib */,
+			);
+			name = "New Game";
+			sourceTree = "<group>";
+		};
+		7AC1ABBC16B56D810043A7BF /* Continue Game */ = {
+			isa = PBXGroup;
+			children = (
+				7AC1ABBD16B56DA60043A7BF /* ContinueGameController.h */,
+				7AC1ABBE16B56DA60043A7BF /* ContinueGameController.m */,
+				7AC1ABBF16B56DA60043A7BF /* ContinueGameController.xib */,
+			);
+			name = "Continue Game";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A3E9FD716B5578E001B717A /* Labyrinth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A3E9FF616B5578E001B717A /* Build configuration list for PBXNativeTarget "Labyrinth" */;
+			buildPhases = (
+				7A3E9FD416B5578E001B717A /* Sources */,
+				7A3E9FD516B5578E001B717A /* Frameworks */,
+				7A3E9FD616B5578E001B717A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Labyrinth;
+			productName = Labyrinth;
+			productReference = 7A3E9FD816B5578E001B717A /* Labyrinth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A3E9FCF16B5578E001B717A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Arne Philipeit Software";
+			};
+			buildConfigurationList = 7A3E9FD216B5578E001B717A /* Build configuration list for PBXProject "Labyrinth" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7A3E9FCD16B5578E001B717A;
+			productRefGroup = 7A3E9FD916B5578E001B717A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A3E9FD716B5578E001B717A /* Labyrinth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A3E9FD616B5578E001B717A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A3E9FE716B5578E001B717A /* InfoPlist.strings in Resources */,
+				7A3E9FED16B5578E001B717A /* Credits.rtf in Resources */,
+				7A3E9FF316B5578E001B717A /* MainMenu.xib in Resources */,
+				7AC1ABAC16B55DF30043A7BF /* IntroController.xib in Resources */,
+				7AC1ABB516B5670C0043A7BF /* MainMenuController.xib in Resources */,
+				7AC1ABBB16B56A560043A7BF /* NewGameController.xib in Resources */,
+				7AC1ABC116B56DA60043A7BF /* ContinueGameController.xib in Resources */,
+				7A6F1E9C16C657CC004FF1D4 /* WaitingScreen.xib in Resources */,
+				7A664F5716C65DDD002CAA8F /* GameViewController.xib in Resources */,
+				7A09EE2516DFD1F500964A7F /* SettingsSheet.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A3E9FD416B5578E001B717A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A3E9FE916B5578E001B717A /* main.m in Sources */,
+				7A3E9FF016B5578E001B717A /* AppDelegate.m in Sources */,
+				7AC1AB9516B55A020043A7BF /* ViewController.m in Sources */,
+				7AC1ABA016B55B650043A7BF /* Map.m in Sources */,
+				7AC1ABA116B55B650043A7BF /* MapGenerator.m in Sources */,
+				7AC1ABA416B55D820043A7BF /* MapView.m in Sources */,
+				7AC1ABAB16B55DF30043A7BF /* IntroController.m in Sources */,
+				7AC1ABB416B5670C0043A7BF /* MainMenuController.m in Sources */,
+				7AC1ABBA16B56A560043A7BF /* NewGameController.m in Sources */,
+				7AC1ABC016B56DA60043A7BF /* ContinueGameController.m in Sources */,
+				7AC1ABC416B571630043A7BF /* WindowController.m in Sources */,
+				7A664F5616C65DDD002CAA8F /* GameViewController.m in Sources */,
+				7ABEEA1B16C9125F0096282F /* DemoMapView.m in Sources */,
+				7A09EE2016DFBA9D00964A7F /* Settings.m in Sources */,
+				7A09EE2316DFD1D900964A7F /* SettingsController.m in Sources */,
+				7A90897116E1405D00B1C790 /* GameSettings.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7A3E9FE516B5578E001B717A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A3E9FE616B5578E001B717A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7A3E9FEB16B5578E001B717A /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A3E9FEC16B5578E001B717A /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		7A3E9FF116B5578E001B717A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A3E9FF216B5578E001B717A /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7A3E9FF416B5578E001B717A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7A3E9FF516B5578E001B717A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7A3E9FF716B5578E001B717A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Labyrinth/Labyrinth-Prefix.pch";
+				INFOPLIST_FILE = "Labyrinth/Labyrinth-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7A3E9FF816B5578E001B717A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Labyrinth/Labyrinth-Prefix.pch";
+				INFOPLIST_FILE = "Labyrinth/Labyrinth-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A3E9FD216B5578E001B717A /* Build configuration list for PBXProject "Labyrinth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A3E9FF416B5578E001B717A /* Debug */,
+				7A3E9FF516B5578E001B717A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A3E9FF616B5578E001B717A /* Build configuration list for PBXNativeTarget "Labyrinth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A3E9FF716B5578E001B717A /* Debug */,
+				7A3E9FF816B5578E001B717A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7A3E9FCF16B5578E001B717A /* Project object */;
+}
